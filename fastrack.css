@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    height: 80px;
+    border: 2px solid red;
+    align-items: center;
+}
+.logo{
+    width: 220px;
+    cursor: pointer;
+}
+.navcenter{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    width: 15%;
+}
+.icon1{
+    width: 25px;
+    cursor: pointer;
+}
+.innavbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid red;
+    width: 40%;
+}
+
+.navbar2{
+border: 2px solid gold;
+background-color: whitesmoke;
+}
