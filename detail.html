@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Page</title>
+</head>
+<body>
+  <h1>Your Details</h1>
+  <div id="detailsContainer"></div>
+
+  <script>
+    // Get the container where data will be displayed
+    const detailsContainer = document.getElementById("detailsContainer");
+
+    // Check if localStorage has any items
+    if (localStorage.length > 0) {
+      const detailsList = document.createElement("ul");
+
+      // Iterate through all localStorage items
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+
+        // Create a list item for each key-value pair
+        const listItem = document.createElement("li");
+        listItem.textContent = `${key}: ${value}`;
+        detailsList.appendChild(listItem);
+      }
+
+      // Append the list to the container
+      detailsContainer.appendChild(detailsList);
+    } else {
+      // If no data found in localStorage
+      detailsContainer.textContent = "No data available.";
+    }
+  </script>
+</body>
+</html>
