@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    scrollbar-width: none;
 }
 .navbar{
     display: flex;
@@ -123,9 +123,17 @@ padding-bottom: 5px ;
     height: fit-content;
 }
 .TRENDING{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 25%;
     display: flex;
     justify-content: center;
     padding-top: 70px;
+    padding-bottom: 70px;
+}
+.scroll{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 78%;
+    /* justify-content: center; */
 }
