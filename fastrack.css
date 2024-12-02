@@ -96,3 +96,28 @@ padding-bottom: 5px ;
     84%, 94% { left: -600%; }      /* Show 7th slide */
     100% { left: 0; }             /* Loop back to 1st slide */
 }
+
+.main{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    width: 2000px;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+.FASTRACKCATEGORIES{
+    font-size: 50px;
+    transform: rotate(270deg);
+    margin-top: 150px;
+    border: 2px solid red;
+    width: fit-content;
+    height: fit-content;
+}
