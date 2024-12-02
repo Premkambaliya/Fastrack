@@ -137,3 +137,17 @@ padding-bottom: 5px ;
     width: 78%;
     /* justify-content: center; */
 }
+.SHOPYOURVIBE{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.BESTSELLERS{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
