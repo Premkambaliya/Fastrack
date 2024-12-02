@@ -151,3 +151,61 @@ padding-bottom: 5px ;
     padding-top: 70px;
     padding-bottom: 70px;
 }
+.scroll1{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 81%;
+    /* justify-content: center; */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-slider1 {
+    position: relative;
+    width: 75vw;
+    height: 500px;
+    overflow: hidden; /* Ensures no overflow beyond the slider */
+}
+
+.img-slider1 .slider-container1 {
+    position: absolute;
+    width: 700%; /* 7 slides = 7 x 100% */
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: slider 7s infinite; /* Adjust duration based on the number of slides */
+}
+
+.img-slider1 .slider-container1 .slide1 {
+    position: relative;
+    width: 14.2857%; /* 100% / 7 slides */
+    height: 100%;
+    float: left;
+}
+
+.img-slider1 .slider-container1 .slide1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slider1 {
+    0%, 16% { left: 0; }           /* Show 1st slide */
+    20%, 33% { left: -100%; }      /* Show 2nd slide */
+    36%, 49% { left: -200%; }      /* Show 3rd slide */
+    52%, 65% { left: -300%; }      /* Show 4th slide */
+    68%, 81% { left: -400%; }      /* Show 5th slide */
+    84%, 97% { left: -500%; }      /* Show 6th slide */
+    100% { left: 0; }             /* Loop back to 1st slide */
+}
+.BEBOTH{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
